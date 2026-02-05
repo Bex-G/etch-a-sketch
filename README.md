@@ -8,6 +8,6 @@ Just for fun, I also added the abilty to draw in randomly generated color values
 
 Feb. 2026 Update:
 
-Just for practive, I completely overhauled the old code and UI to fix the issues I had with the original program.
+Just for practice, I completely overhauled the old code and UI to fix the issues I had with the original program.
 
 More specifically, I simplified and cleaned up the JavaScript, swapped out the cumbersome (and very buggy) functions that handled the generation of new sketchpads, did away with the random color feature, and updated the UI for a more polished final product.
