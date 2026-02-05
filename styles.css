@@ -1,39 +1,66 @@
+:root {
+  --number: 16;
+}
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: cornflowerblue;
+  height: 100%;
+  width: 100%;
 }
 
-button {
-    height: 50px;
-    width: auto;
-    font-size: x-large;
-    margin-right: 20px;
+#newSketchpadBtn {
+  margin: 10px 10px 0px 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 1.2rem;
 }
 
-.header {
-    display: flex;
-    width: 100%;
-    background-color: #1F2937;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+#newSketchpadBtn:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
 }
 
-.pad {
-    display: flex;
-    justify-content: center;
+#handheld {
+  height: 600px;
+  width: 800px;
+  margin: 0px auto 20px auto;
+  padding: 10px 25px;
+  background-color: red;
+  border-radius: 10%;
 }
 
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 800px;
-    width: 800px;
-    margin-top: 50px;
+h1 {
+  color: gold;
+  font-family: cursive;
+  text-align: center;
+  margin: 10px;
 }
 
-box {
-    outline: .1px solid rgba(125, 125, 125, 0.25);
+#pad {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.dial {
+  background-color: whitesmoke;
+  height: 130px;
+  width: 130px;
+  border-radius: 100%;
+  box-shadow: 1px -3px 0px 2px lightgrey;
+}
+
+#screen {
+  display: grid;
+  grid-template-columns: repeat(var(--number), 1fr);
+  height: 500px;
+  width: 500px;
+}
+
+.box {
+  aspect-ratio: 1 / 1;
+  outline: 1px solid darkgray;
+  background-color: grey;
 }
