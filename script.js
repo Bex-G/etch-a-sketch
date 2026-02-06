@@ -13,7 +13,9 @@ function newSketchpad() {
     "Choose a number between 16-100 to generate a new sketchpad grid.",
     16,
   );
-  if (isNaN(input) || input < 16 || input > 100) {
+  if (input === null) {
+    input = 16;
+  } else if (isNaN(input) || input < 16 || input > 100) {
     alert("Whoops! Invalid entry. Please choose a number between 16-100.");
     input = 16;
   }
